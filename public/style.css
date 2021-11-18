@@ -1,0 +1,27 @@
+.formTitle {
+  font-weight: bold;
+}
+
+.formSubtitle {
+  font-style: italic;
+  color: rgb(70, 70, 70);
+}
+
+.marginTopS {
+  margin-top: 1rem;
+}
+
+.discUsername {
+  margin-bottom: 0.1rem;
+  font-style: italic;
+}
+
+.discBox {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.marginLeftS {
+  margin-left: 1rem;
+}
