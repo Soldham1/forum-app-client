@@ -11,7 +11,7 @@ const Home = () => {
       <div className="container marginTopS">
         <div className="row">
           <div className="col-8">
-            <h2>Latest Discussions</h2>
+            <h2>Latest discussions</h2>
             <DiscList />
           </div>
           <div className="col-4">

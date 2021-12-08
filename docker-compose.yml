@@ -1,0 +1,5 @@
+version: "3"
+services: 
+  csc3131-client:
+    env_file:
+      - ./.env
