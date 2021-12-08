@@ -9,18 +9,21 @@ const LoginForm = () => {
 
   const { username, password } = formData;
 
+  // Sets form data whenever user types in form text boxes
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const onSubmit = async (e) => {
     e.preventDefault();
 
+    // Creates new user object
     const user = {
       username,
       password,
     };
 
     try {
+      // Sets headers
       const config = {
         headers: {
           "Content-Type": "application/json",
@@ -29,8 +32,10 @@ const LoginForm = () => {
 
       const body = JSON.stringify(user);
 
+      // Sends axios request
       const res = await axios.post("/auth", body, config);
 
+      // If successful stores token and changes location
       if (res.status === 200) {
         sessionStorage.setItem("token", res.data.token);
         window.location.replace("/home");
